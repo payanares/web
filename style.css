@@ -440,8 +440,7 @@ footer {
         font-size: 0.8rem;
     }
     .info{
-    background-color: var(--darkGreen);
-    min-height: 50vh;
+    min-height: 110%;
     }
     .coupleHeader .arum21{
         font-size: 2rem;
