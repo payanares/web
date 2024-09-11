@@ -439,6 +439,10 @@ footer {
     .homeTwo .card p{
         font-size: 0.8rem;
     }
+    .info{
+    background-color: var(--darkGreen);
+    min-height: 50vh;
+    }
     .coupleHeader .arum21{
         font-size: 2rem;
         font-family: 'Amiri Quran', cursive ;
