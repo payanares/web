@@ -1,0 +1,510 @@
+:root {
+    --darkGreen: #1A3636;
+    --green: #40534C;
+    --lightGreen: #677D6A;
+    --cream: #e0c7a8;
+    --darkCream: #FFB22C;
+    --purple: #A91D3A;
+    --shadow: 0 2px 3px rgb(0 0 0 / 0.5);
+    --font: system-ui;
+    --specialFont: "Cormorant", serif;
+    --btn-font: "Baloo Bhaijaan 2", sans-serif;
+    --grey: #758694;
+}
+
+body {
+    overflow-x: hidden;
+    color: var(--green);
+    background-image: url(img/bg2.png);
+    background-position: top right;
+    background-size: 300%;
+}
+
+.hero{
+    overflow: hidden;
+    } /* Prevent scrolling} */
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(img/hero.png);
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: repeat;
+    
+}
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--cream);
+    z-index: 1;
+}
+.hero .header h3, .home h3{
+    font-family: Georgia;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.hero .header h1{
+    font-family: var(--specialFont);
+    font-size: 5rem;
+    font-weight: 500;
+    color: var(--cream);
+}
+.hero .header h4 , .home h4, .info h4, .hero .header h2 span, .gift h4{
+    font-family: Helvetica;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-top: 1.5rem;
+}
+.home h5 {
+    font-family: 'Babylonica', cursive;
+    font-size: 8rem;
+    font-weight: 500;
+    margin-top: -2rem;
+    margin-bottom: -2.5rem;
+}
+.hero .header h2 {
+    font-family: Helvetica;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: var(--shadow);
+    letter-spacing: 0.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--cream);
+}
+
+.hero .btn , .info .btn{
+    background-color: var(--cream);
+    color: var(--green);
+    box-shadow: var(--shadow);
+    font-weight: 750;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: var(--specialFont);
+}
+
+.btn .bi,.info .btn {
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover,.info .btn:hover,.homeTwo .btn:hover {
+    background-color: var(--lightGreen);
+    color: var(--cream);
+}
+.homeBorder{
+    background-color: #152626;
+    height: 10vh;
+    width: 100vw;
+    border-radius: 0% 0% 100% 100%;
+    margin-top: -2rem;
+    margin-bottom: 5rem;
+}
+.home {
+    background-color: var(--cream);
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    background-image: url(img/bg1.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-top: -2px;
+    
+}
+
+.home h1{
+    font-family: var(--specialFont);
+    font-size: 5rem;
+    font-weight: 500;
+    color: var(--darkGreen);
+}
+.coupleHeader .arum21{
+    font-size: 2rem;
+    font-family: 'Amiri Quran', cursive ;
+    color: var(--cream);
+    margin-top: 0.8rem;
+}
+.text-start{
+    font-weight: 300;
+    font-family: var(--specialFont);
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+/* home */
+.homeBorder2{
+    background-color: var(--purple);
+    height: 8vh;
+    width: 100vw;
+    border-radius: 100%;
+    
+}
+.homeTwo {
+    min-height: 60vh;
+    background-color: #152626;
+    margin-top: -2rem;
+    color: var(--cream);
+}
+.homeTwo h4{
+    font-family: var(--specialFont);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--cream);
+}
+.homeTwo .card{
+    background-color: rgb(231, 220, 201);
+    text-align: center;
+}
+.homeTwo .card h4 {
+    font-family: var(--specialFont);
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--darkGreen);
+}
+.homeTwo .card p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 350;
+    text-decoration: none;
+    color: var(--darkGreen);
+
+}
+.homeTwo a{
+    width: 100%;
+}
+.homeTwo .btn{
+    background-color: var(--cream);
+    color: var(--green);
+    font-weight: 750;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: var(--specialFont);
+}
+.info{
+    background-color: var(--darkGreen);
+    min-height: 80vh;
+    min-width: 100vw;
+    overflow: hidden;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: var(--cream);
+    margin-bottom: 5rem;
+}
+.info .h4special{
+    font-family: 'Alex Brush', cursive;
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+.info .couple  {
+    margin-top: 10px;
+    overflow: hidden;
+}
+.info .couple img{
+    width: 50%;
+}
+.info .alamat span{
+    font-weight: bold;
+}
+.info .card-header{
+    background-color: var(--darkGreen);
+    color: var(--cream);
+    border-bottom: 1px solid var(--cream);
+    font-weight: bolder;
+}
+.info .card{
+    background-color: var(--darkGreen);
+    border: 1px solid var(--cream);
+    color: var(--cream);
+}
+.galleryBorder{
+    background-color: #152626;
+    background-repeat: repeat;
+    height: 10vh;
+    width: 100vw;
+    border-radius:100% 100% 0% 0% ;
+    margin-top: -7.5rem;
+}
+.gallery{
+    background-color: #152626;
+    min-width: 100vw;
+}
+.gallery span {
+    color: var(--cream);
+    text-transform: uppercase;
+    color: var(--vintage);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    color: var(--cream);
+}
+.gallery h2{
+    font-family: var(--specialFont);
+    font-weight: 250;
+    font-size: 5rem;
+    color: var(--cream);
+}
+.gallery p{
+    font-weight: 300;
+    color: var(--cream);
+}
+
+
+.rsvp {
+    background-color: var(--darkGreen);
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+}
+.rsvp h2 {
+    color: white;
+    font-family: var(--btn-font);
+    font-size: 2rem;
+}
+.rsvp p {
+    font-weight: normal;
+    font-family: var(--font);
+    color: white;
+    text-transform: uppercase;
+}
+
+.rsvp form label {
+    color: white;
+    font-weight: normal;
+    font-family: system-ui;
+    text-transform: uppercase;
+}
+
+.rsvp button {
+    background-color: var(--green);
+    color: white;
+    border: 1px solid white;
+}
+
+.rsvp button:hover {
+    background-color: white;
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+
+.rsvp #nama, .rsvp #status, .rsvp #jumlah {
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--green);
+}
+.comment{
+    background-color: var(--darkGreen);
+    font-weight: 100vw;
+    padding-bottom: 5rem;
+}
+.commentBody{
+    background-color: white;
+    padding: 2%;
+    
+}
+
+.gift{
+    background-color: white;
+    color: white;
+    padding: 2%;
+}
+.gift h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'alex brush';
+    text-transform:capitalize;
+}
+.gift .card{
+    background-color: transparent;
+    
+    border: transparent;
+    color: var(--purple);
+}
+.gift .card p{
+    font-size: 1.6rem;   
+    font-weight: 500;
+    font-family: var(--specialFont);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Media query for Laptop (992px and below) */
+@media (max-width: 992px) {
+    html {
+        font-size: 100%;
+        overflow-x: hidden;
+    }
+    .simply-countdown > .simply-section {
+        padding: 60px;
+    }
+    .homeTwo {
+        margin-top: -2rem;
+    }
+    .homeBorder2{
+        height: 5vh;
+        border-radius: 175%;
+    }
+}
+
+/* Media query for tablets (768px and below) */
+@media (max-width: 768px) {
+    html {
+        font-size: 95%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 20px;
+        margin: 2px;
+    }
+.galleryBorder{
+    margin-top: -10rem;
+}
+.gallery{
+    margin-top: -5rem;
+}
+.homeTwo {
+    margin-top: -2rem;
+}
+.homeBorder2{
+    height: 4vh;
+    border-radius: 175%;
+}
+.homeBorder{
+    height: 6vh;
+    border-radius: 0% 0% 100% 100%;
+}
+}
+
+
+/* Media query for mobile phones (576px and below) */
+@media (max-width: 576px) {
+    html {
+        font-size: 75%;
+    }
+    .hero::before {
+        background-image: url(img/hero1.png);
+        background-position: center bottom;
+        background-size: 100%;
+        background-repeat: repeat;
+    }
+    .home {
+        background-image: url(img/bg1a.png);
+        background-position: bottom right;
+    }
+    .home {
+        min-height: 80vh;
+    }
+    .simply-countdown > .simply-section {
+        padding: 20px;
+        margin: 5px;
+    }
+    .homeTwo {
+        margin-top: -2.5rem;
+
+    }
+    .homeBorder2{
+        height: 4vh;
+        border-radius: 175%;
+    }
+    .homeBorder{
+        height: 4vh;
+        border-radius: 0% 0% 100% 100%;
+    }
+    .home {
+        top: -100rem;
+        height: 100vh;
+    }
+    .homeTwo .couple img{
+        width: 100%;
+        display: inline;
+        
+    }
+    .homeTwo .card h4 {
+        font-size: 1.1rem;
+    }
+    .homeTwo .card p{
+        font-size: 0.8rem;
+    }
+    .coupleHeader .arum21{
+        font-size: 2rem;
+        font-family: 'Amiri Quran', cursive ;
+        color: var(--cream);
+        line-height: 5rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    .coupleHeader .text-start {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    .homeTwo .couple img{
+        padding: 2rem;
+        box-shadow: none;
+    }
+}
+/* Media query for very small screens (400px and below) */
+@media (max-width: 400px) {
+    html {
+        font-size: 55%;
+    }
+    .hero .header h3 {
+        font-size: 1.8rem;
+    }
+    .hero .header h4 {
+        font-size: 1.3rem;
+        font-weight: 520;
+    }
+}
+
+/* Media query for extremely small screens (300px and below) */
+@media (max-width: 300px) {
+    html {
+        font-size: 47.5%;
+    }
+    .hero .header h3 {
+        font-size: 2rem;
+    }
+    .hero .header h4 {
+        font-size: 1.5rem;
+        font-weight: 520;
+    }
+}
+
+
+
+/* chatgpt */
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Create a class for the fade-in effect */
+.fade-in {
+    opacity: 0; /* Start with the element hidden */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    animation: fadeIn 1s ease-out forwards; /* Apply the animation when the class is added */
+}

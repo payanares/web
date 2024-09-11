@@ -1,0 +1,47 @@
+/* Base styles for the countdown */
+.simply-countdown {
+    overflow: hidden;
+    display: table;
+    margin: auto;
+}
+
+.simply-countdown > .simply-section {
+    width: auto;
+    height: 1.5rem; 
+    padding: 1.8rem;
+    display: flex; 
+    align-items: center;
+    float: left;
+    justify-content: center;
+    margin: 8px;
+    background: transparent;
+    font-family: var(--btn-font);
+
+    
+    /* Apply fade in/out animation */
+    animation: fadeInOut 5s infinite;
+}
+
+/* Styles for amounts and words */
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+    display: block;
+    text-align: center;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+    font-size: 1rem;
+}
+
+/* Keyframes for fade in/out animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
